@@ -229,7 +229,7 @@ public class AsteroidPool : MonoBehaviour {
         else
             return GetPooledObject();
     }
-
+    /// <summary>Change all the asteroids sprites for new one. Can be used on runtime</summary>
     public void ChangeAsteroidSkin(Sprite[] asteroidSprite, Sprite coinSprite, Sprite frozenSprite, Sprite boomSprite, Sprite debrisSprite, Sprite[] destroyerSkins)
     {
         for (int i = 0; i < pooledObjects.Count; i++)
